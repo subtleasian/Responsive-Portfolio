@@ -179,11 +179,13 @@ h3, h2 {
 /* contact page */
 
 #contact-form ul {
+  padding-left: none;
   margin-bottom: 20px;
 }
 
 #contact-form li {
   margin-bottom: 10px;
+  list-style-type: none;
 }
 
 label,

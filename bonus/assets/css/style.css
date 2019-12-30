@@ -21,10 +21,14 @@ body {
 }
 
 .wrapper {
-  height: auto !important;
   height: 100%;
   min-height: 100%;
-  margin: 0 auto -105px;
+  margin-bottom: -105px;
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
 }
 
 footer,
@@ -138,6 +142,17 @@ nav a:first-child {
   border-left: 0 none;
 }
 
+/* images */
+
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+
 /* footer */
 
 footer {
@@ -191,7 +206,7 @@ h3,
 .main-section {
   float: left;
   width: 100%;
-  max-width: 650px;
+  max-width: 640px;
   padding: 30px;
   margin: 0 0 40px;
   background: #fff;
@@ -202,10 +217,12 @@ h3,
 
 #contact-form ul {
   margin-bottom: 20px;
+  padding-left: none;
 }
 
 #contact-form li {
   margin-bottom: 10px;
+  list-style-type: none;
 }
 
 label,
