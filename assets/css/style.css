@@ -208,7 +208,7 @@ h3,
 .main-section {
   float: left;
   width: 100%;
-  max-width: 960px;
+  max-width: 768px;
   padding: 30px;
   margin: 0 0 40px;
   background: #fff;
@@ -311,8 +311,7 @@ input[type=submit] {
 
   .main-section {
     width: calc(100vw - 40px) ;
-    margin: 0 15px 40px;
-    float: left;
+    margin: 0 auto 40px;
   }
 
   #logo {
@@ -347,8 +346,23 @@ input[type=submit] {
     width: calc(100vw - 40px) ;
     margin: 0 auto 40px;
   }
+
+  .container {
+    width: calc(100vw - 50px);
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
 }
 
 @media screen and (max-width: 980px) {
+  .main-section {
+    max-width: 768px ;
+    margin: 0 auto 40px;
+  }
 
+  .container {
+    width: calc(100vw - 70px);
+    max-width: 768px;
+    margin: 0 auto;
+    clear: both;
 }
