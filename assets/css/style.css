@@ -8,9 +8,55 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
-/* general */
+/* sticky footer styling */
+
+/* https://css-tricks.com/snippets/css/sticky-footer/ */
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  min-height: 100%;
+  margin-bottom: -105px;
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
+}
+
+footer,
+.push {
+  height: 105px;
+}
+
+/* end sticky footer styling */
+
+/* start hover styling */
+
+#logo:hover,
+input[type=submit]:hover {
+  background: #5e7f7e;
+}
+
+nav a:hover {
+  color: #5e7f7e;
+}
+
+.social:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* end hover styling */
+
+/* general styling */
 
 .container {
   width: 100%;
@@ -42,7 +88,7 @@ h1 {
   padding-bottom: 20px;
   font-size: 30px;
   line-height: 49px;
-  border-bottom: 3px solid #dddddd;
+  border-bottom: 3px solid #ddd;
 }
 
 h2,
@@ -71,7 +117,7 @@ h3 {
   font-size: 30px;
   font-weight: 700;
   line-height: 90px;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   text-decoration: none;
   background: #4aaaa5;
@@ -96,25 +142,60 @@ nav a:first-child {
   border-left: 0 none;
 }
 
+/* images */
+
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+
 /* footer */
 
 footer {
   padding: 30px 0;
   clear: both;
   font-size: 12px;
-  color: #ffffff;
-  color: #cccccc;
+  color: #fff;
+  color: #ccc;
   text-align: center;
-  background: #666666;
+  background: #666;
   border-top: 8px solid #4aaaa5;
-  height: 50px;
 }
 
-h3, h2 {
+/* sidebar */
+
+.sidebar {
+  float: left;
+  width: 100%;
+  max-width: 300px;
+  padding: 30px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+h3,
+.sidebar h2 {
   padding-bottom: 20px;
   margin-bottom: 15px;
   line-height: 22px;
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid #eee;
+}
+
+.social {
+  width: 62px;
+  height: 62px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.social:last-child {
+  margin-right: 0;
 }
 
 /* main */
@@ -130,8 +211,8 @@ h3, h2 {
   max-width: 960px;
   padding: 30px;
   margin: 0 0 40px;
-  background: #ffffff;
-  border: 1px solid #dddddd;
+  background: #fff;
+  border: 1px solid #ddd;
 }
 
 /* portfolio page */
@@ -179,8 +260,8 @@ h3, h2 {
 /* contact page */
 
 #contact-form ul {
-  padding-left: none;
   margin-bottom: 20px;
+  padding-left: none;
 }
 
 #contact-form li {
@@ -202,7 +283,7 @@ textarea {
   height: 35px;
   padding: 0 10px;
   font-size: 14px;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
 }
 
 textarea {
@@ -212,8 +293,62 @@ textarea {
 input[type=submit] {
   padding: 10px 30px;
   font-size: 18px;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  #masthead {
+    position: static;
+  }
+
+  .main-section {
+    width: calc(100vw - 40px) ;
+    margin: 0 15px 40px;
+    float: left;
+  }
+
+  #logo {
+    clear: both;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+  }
+
+  nav {
+    clear: both;
+    float: none;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  .auth-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #main-container {
+    padding-top: 0px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .main-section {
+    width: calc(100vw - 40px) ;
+    margin: 0 auto 40px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+
 }
