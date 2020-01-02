@@ -227,14 +227,14 @@ input[type=submit] {
   }
 
   #main-container {
-    max-width: 67%;
+    max-width: 65%;
     float: left;
     margin: 32px;
     padding-top: 100px;
   }
 
   .work:nth-child(even) {
-    margin-right: 35px;
+    margin-right: 15px;
   }
 
 }
