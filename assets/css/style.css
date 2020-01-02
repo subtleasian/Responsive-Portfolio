@@ -227,11 +227,16 @@ input[type=submit] {
   }
 
   #main-container {
-    max-width: 65%;
+    max-width: 67%;
     float: left;
     margin: 32px;
     padding-top: 100px;
   }
+
+  .work:nth-child(even) {
+    margin-right: 35px;
+  }
+
 }
 
 @media only screen and (max-width:768px) {
