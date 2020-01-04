@@ -8,6 +8,27 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+}
+
+/* sticky footer */
+
+html, body {
+  height: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+
+.page-wrap::after {
+  content: "";
+  display: block;
+}
+
+.site-footer, .page-wrap::after {
+  height: 100px;
 }
 
 /* general */
@@ -107,7 +128,6 @@ footer {
   text-align: center;
   background: #666666;
   border-top: 8px solid #4aaaa5;
-  height: 50px;
 }
 
 h3, h2 {
@@ -121,7 +141,6 @@ h3, h2 {
 
 #main-container {
   padding-top: 130px;
-  min-height: calc(100vh - 70px);
 }
 
 .main-section {
@@ -259,5 +278,36 @@ input[type=submit] {
 }
 
 @media only screen and (max-width:640px) {
-  
+  .container {
+    max-width: 100%;
+  }
+
+  #masthead {
+    position: static;
+    float: none;
+    display: inline-block;
+    margin-bottom: 0px;
+  }
+
+  #logo {
+    float: none;
+    display: inline-block;
+    width: 100%;
+  }
+
+  nav {
+    float: none;
+    margin: 20px auto 20px;
+    text-align: center;
+  }
+
+  #main-container {
+    padding-top: 0px;
+  }
+
+  .auth-image {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+
 }
