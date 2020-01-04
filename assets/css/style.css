@@ -11,32 +11,26 @@ body {
   margin: 0;
 }
 
-/* sticky footer styling */
+/* sticky footer */
 
-/* https://css-tricks.com/snippets/css/sticky-footer/ */
-
-html,
-body {
+html, body {
   height: 100%;
 }
 
-.wrapper {
-  height: 100%;
+.page-wrap {
   min-height: 100%;
-  margin-bottom: -105px;
+  margin-bottom: -100px;
 }
 
-.wrapper:after {
+.page-wrap::after {
   content: "";
   display: block;
 }
 
-footer,
-.push {
-  height: 105px;
+.site-footer, .page-wrap::after {
+  height: 100px;
 }
 
-/* end sticky footer styling */
 
 /* start hover styling */
 
@@ -60,8 +54,8 @@ nav a:hover {
 
 .container {
   width: 100%;
-  max-width: 960px;
   margin: 0 auto;
+  max-width: 960px;
   clear: both;
 }
 
@@ -202,7 +196,6 @@ h3,
 
 #main-container {
   padding-top: 130px;
-  min-height: calc(100vh - 70px);
 }
 
 .main-section {
@@ -299,6 +292,7 @@ input[type=submit] {
   border: 0 none;
 }
 
+<<<<<<< HEAD
 
 @media screen and (max-width: 640px) {
   h1 {
@@ -337,10 +331,51 @@ input[type=submit] {
 
   #main-container {
     padding-top: 0px;
+=======
+@media only screen and (max-width:980px) {
+  body {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .container {
+    max-width: 900px;
+  }
+
+  #main-container {
+    max-width: 65%;
+    float: left;
+    margin: 32px;
+    padding-top: 100px;
+  }
+
+  .work:nth-child(even) {
+    margin-right: 15px;
   }
 
 }
 
+@media only screen and (max-width:768px) {
+  .container {
+    max-width: calc(100vw - 80px)
+  }
+
+  #main-container {
+    max-width: calc(100vw - 80px)
+  }
+
+  .work:nth-child(even) {
+    margin-right: 78px;
+  }
+
+  .auth-image {
+    width: 50%;
+>>>>>>> try2
+  }
+
+}
+
+<<<<<<< HEAD
 @media screen and (max-width: 768px) {
   .main-section {
     width: calc(100vw - 40px) ;
@@ -365,4 +400,39 @@ input[type=submit] {
     max-width: 768px;
     margin: 0 auto;
     clear: both;
+=======
+@media only screen and (max-width:640px) {
+  .container {
+    max-width: 100%;
+  }
+
+  #masthead {
+    position: static;
+    float: none;
+    display: inline-block;
+    margin-bottom: 0px;
+  }
+
+  #logo {
+    float: none;
+    display: inline-block;
+    width: 100%;
+  }
+
+  nav {
+    float: none;
+    margin: 20px auto 20px;
+    text-align: center;
+  }
+
+  #main-container {
+    padding-top: 0px;
+  }
+
+  .auth-image {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+
+>>>>>>> try2
 }
