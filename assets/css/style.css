@@ -292,46 +292,6 @@ input[type=submit] {
   border: 0 none;
 }
 
-<<<<<<< HEAD
-
-@media screen and (max-width: 640px) {
-  h1 {
-    font-size: 24px;
-  }
-
-  #masthead {
-    position: static;
-  }
-
-  .main-section {
-    width: calc(100vw - 40px) ;
-    margin: 0 auto 40px;
-  }
-
-  #logo {
-    clear: both;
-    width: 100%;
-    height: 75px;
-    line-height: 75px;
-  }
-
-  nav {
-    clear: both;
-    float: none;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-  }
-
-  .auth-image {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  #main-container {
-    padding-top: 0px;
-=======
 @media only screen and (max-width:980px) {
   body {
     font-size: 16px;
@@ -370,37 +330,10 @@ input[type=submit] {
 
   .auth-image {
     width: 50%;
->>>>>>> try2
   }
 
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 768px) {
-  .main-section {
-    width: calc(100vw - 40px) ;
-    margin: 0 auto 40px;
-  }
-
-  .container {
-    width: calc(100vw - 50px);
-    max-width: 960px;
-    margin: 0 auto;
-    clear: both;
-}
-
-@media screen and (max-width: 980px) {
-  .main-section {
-    max-width: 768px ;
-    margin: 0 auto 40px;
-  }
-
-  .container {
-    width: calc(100vw - 70px);
-    max-width: 768px;
-    margin: 0 auto;
-    clear: both;
-=======
 @media only screen and (max-width:640px) {
   .container {
     max-width: 100%;
@@ -434,5 +367,4 @@ input[type=submit] {
     float: none;
     margin-bottom: 20px;
 
->>>>>>> try2
 }
